@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Hero Travel</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/booking.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/travel.png" type="image/x-icon">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#"><img src="images/group_40071.png" alt="Logo"></a>
+                <a href="#" class="nav-title">Hero <span class="travel">Travel</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="testimonial.html">Testimonial</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="booking-container">
+            <h2 class="booking-title">Book Your Trip</h2>
+            <p class="booking-description">Fill in the details below to confirm your booking.</p>
+
+            <div class="booking-wrapper">
+                <!-- Booking Form -->
+                <form class="booking-form">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                    <label for="destination">Destination</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Select Destination</option>
+                        <option value="Maldives">Maldives</option>
+                        <option value="Swiss Alps">Swiss Alps</option>
+                        <option value="Kashmir">Kashmir</option>
+                    </select>
+
+                    <label for="date">Travel Date</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="people">Number of People</label>
+                    <input type="number" id="people" name="people" min="1" max="10" placeholder="Enter number of travelers" required>
+
+                    <button type="submit" class="booking-btn">Confirm Booking</button>
+                </form>
+
+                <!-- Booking Summary -->
+                <div class="booking-summary">
+                    <h3>Your Trip Summary</h3>
+                    <p><strong>Destination:</strong> <span id="summary-destination">Not Selected</span></p>
+                    <p><strong>Travel Date:</strong> <span id="summary-date">Not Selected</span></p>
+                    <p><strong>Number of People:</strong> <span id="summary-people">0</span></p>
+                    <p><strong>Estimated Cost:</strong> <span id="summary-cost">$0</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="nav-logo footer-logo">
+                    <a href="#"><img src="images/group_40071.png" alt="Logo"></a>
+                    <a href="#" class="nav-title footer-title">Hero <span class="travel">Travel</span></a>
+                </div>
+
+                <p class="footer-description">
+                    Discover amazing destinations with Hero Travel. Explore, book, and enjoy unforgettable experiences!
+                </p>
+
+                <div class="footer-socials-icons">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+
+                <hr>
+
+                <p class="footer-copyright">
+                    © 2025, All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+   <script src="./script/booking.js"></script>
+
+</body>
+</html>

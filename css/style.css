@@ -31,6 +31,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0px;
+    position: sticky;
+    z-index: 100;
 }
 
 .nav-logo {
